@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<truthTable>
+  <variables>
+    <variable name="Selector2"/>
+    <variable name="Selector1"/>
+    <variable name="In8"/>
+    <variable name="In4"/>
+    <variable name="In2"/>
+    <variable name="In1"/>
+  </variables>
+  <results>
+    <result>
+      <name>Output8</name>
+      <values class="BoolTable">0000011111XXXXXX0000000011XXXXXX0000011111XXXXXX0001010111XXXXXX</values>
+    </result>
+    <result>
+      <name>Output4</name>
+      <values class="BoolTable">0111100001XXXXXX0000111111XXXXXX0000101111XXXXXX0100101101XXXXXX</values>
+    </result>
+    <result>
+      <name>Output2</name>
+      <values class="BoolTable">1001100110XXXXXX0011110000XXXXXX0011010011XXXXXX0010011011XXXXXX</values>
+    </result>
+    <result>
+      <name>Output1</name>
+      <values class="BoolTable">1010101010XXXXXX0110011001XXXXXX0101010101XXXXXX0101010101XXXXXX</values>
+    </result>
+  </results>
+</truthTable>
