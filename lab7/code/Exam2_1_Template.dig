@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<circuit>
+  <version>2</version>
+  <attributes/>
+  <visualElements>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>reset</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="120"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>X</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="-60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Y</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>Z</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>In</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>load</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="180"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Clock</elementName>
+      <elementAttributes>
+        <entry>
+          <string>runRealTime</string>
+          <boolean>true</boolean>
+        </entry>
+        <entry>
+          <string>Label</string>
+          <string>clock</string>
+        </entry>
+      </elementAttributes>
+      <pos x="500" y="240"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>A</string>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="-60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>B</string>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="0"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Out</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>C</string>
+        </entry>
+      </elementAttributes>
+      <pos x="720" y="60"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Testcase</elementName>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>T06</string>
+        </entry>
+        <entry>
+          <string>Testdata</string>
+          <testData>
+            <dataString>X Y Z reset load clock A B C
+0 0 0 1 0 0 x x x
+0 0 0 1 0 1 0 0 0
+1 1 0 0 1 0 0 0 0
+1 1 0 0 1 1 1 1 0
+0 0 0 0 0 0 1 1 0
+0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 1 1 1
+0 0 0 0 0 1 0 0 1
+0 0 0 0 0 0 0 0 1
+0 0 0 0 0 1 1 0 0
+0 0 0 0 0 0 1 0 0
+0 0 0 0 0 1 0 1 0
+0 0 0 0 0 0 0 1 0
+0 0 0 0 0 1 0 1 1
+0 0 0 0 0 0 0 1 1
+0 0 0 0 0 1 1 0 1
+0 0 0 0 0 0 1 0 1
+0 0 0 0 0 1 1 1 1
+0 0 0 0 0 0 1 1 1
+0 0 0 0 0 1 0 0 1
+0 0 0 0 0 0 0 0 1
+</dataString>
+          </testData>
+        </entry>
+      </elementAttributes>
+      <pos x="220" y="-100"/>
+    </visualElement>
+  </visualElements>
+  <wires/>
+  <measurementOrdering/>
+</circuit>
