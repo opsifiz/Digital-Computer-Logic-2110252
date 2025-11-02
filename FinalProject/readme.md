@@ -62,5 +62,34 @@ Final Code : [DigLo68_Project_Full-6833177921-2248413.dig](DigLo68_Project_Full-
 
 1111 (max <= MUX2:1 between max or rRAM[i2])
 
+## Implement FSM by MUX
+
+| Present State   | Next State | Condition        |
+|-----------------|------------|------------------|
+| 0000            | 0010       | st = 1           |
+|                 | 0001       | res = 1          |
+|                 | 0000       | Default case     |
+| 0001            | 0001       | rRAM_iter < 16   |
+|                 | 0000       | rRAM_iter >=16   |
+| 0010            | 0111       | isHALT Opcode    |
+|                 | 1000       | isFuture1 Opcode |
+|                 | 1100       | isFuture2 Opcode |
+|                 | 0100       | isLCM Opcode     |
+|                 | 0110       | Default Case     |
+| 0011 (Not Used) |            |                  |
+| 0100            | 0101       | Default Case     |
+| 0101            | 0110       | Default Case     |
+| 0110            | 0010       | Default Case     |
+| 0111            | 0000       | Default Case     |
+| 1000            | 1001       | i_1 <  target    |
+|                 | 1010       | i_1 >= target    |
+| 1001            | 1000       | Default Case     |
+| 1010            | 1011       | Default Case     |
+| 1011            | 0110       | Default Case     |
+| 1100            | 1111       | Default Case     |
+| 1101            | 1111 1110  | i_2 <= accB      |
+|                 | 1110       | i_2 >  accB      |
+| 1111            | 1101       | Default Case     |
+
 ## Overview Curcuits : 
 ![](./assets/overview.png)
